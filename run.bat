@@ -1,0 +1,2 @@
+node c.js
+paused
