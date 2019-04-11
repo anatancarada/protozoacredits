@@ -9,7 +9,6 @@ client.on('ready', () => {
 
 
 client.on('message', message => {
-      var prefix = "@" ;
   if (message.channel.type == "dm") return console.log(message.author.username + ` => type this (${message.content}) in Dm`);
   if (message.author.bot) return;
   sql.get(`SELECT * FROM scores WHERE userId ="${message.author.id}"`, (err, row) => {
